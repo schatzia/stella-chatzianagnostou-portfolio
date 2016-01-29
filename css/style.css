@@ -1,7 +1,12 @@
-body {
+html {
   box-sizing: border-box;
   font-family: "Lato", Open Sans, Oswald, sans-serif;
   font-size: 17px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
   margin: 0 10px;
   padding: 0;
 }
@@ -31,7 +36,14 @@ nav{
 	display: inline-block;
 	margin-right: 1.2em;
 	color: #fff;
-}	
+}
+.social-top li a, .top-menu li a{
+	color: #fff;
+	transition: color 0.5s ease;
+}
+.social-top li a:hover, .top-menu li a:hover{
+	color: #c03555;
+}
 .top-menu{
 	padding-top: 15px;
 	margin-right: 2rem;
@@ -77,12 +89,16 @@ nav{
 	cursor: pointer;
 }
 .projects .content h1{
+	color: #000; 
+	margin-left: 5.5em;
+}
+.project .row{
 	display: block;
 	width: 80%;
-	color: #fff; 
-	margin-left: 3em;
+	margin-left: 5em;
+	color: #fff;
 }
-.projects .content div{
+.projects .content div.project{
 	width: 80%;
 	height: 300px;
 	margin: 30px auto;
@@ -91,8 +107,22 @@ nav{
 	border-top: 25px solid #c03555;
 	transition: border-top 1s ease;
 }
-.projects .content div:hover{
+.projects .content div.project:hover{
 	border-top: 50px solid #ed3e67;
+}
+.project-button{
+	border: 1px solid #fff;
+	background: transparent;
+	transition: background-color 0.5s ease;
+	border-radius: 0.3em;
+	padding: 0.5em 0.7em;
+	color: #fff;
+	font-size: 0.8em;
+	margin-right: 3em;
+}
+.project-button:hover{
+	background-color: #ededed;
+	color: #000;
 }
 .karma{
 	background: url('../images/karma-bg.jpg');
@@ -100,4 +130,23 @@ nav{
 	background-position: center bottom;
 	background-size: cover;
 	overflow: auto;
+}
+footer{
+	background: #971b37;
+	height: 15rem;
+}
+.social-bottom{
+	text-align: center;
+	margin-top: 2em;
+}
+.social-bottom >li{
+	display: inline-block;
+	margin-right: 1.5em;
+	background: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	padding:18px 14px;
+	font-size: 3rem;
 }
