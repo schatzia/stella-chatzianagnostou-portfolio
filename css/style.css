@@ -10,11 +10,17 @@ body{
   margin: 0 10px;
   padding: 0;
 }
+a{
+	text-decoration: none;
+	color: #fff;
+}
 .content{
 	padding: 0 15px;
 	margin: 0 auto;
 }
-
+.hidden{
+	display: none;
+}
 nav{
 	background: #000;
 	position: fixed;
@@ -87,15 +93,21 @@ nav{
 	background: #ed3e67;
 	cursor: pointer;
 }
+.more-button:focus{
+	outline: none;
+}
 .projects .content h1{
 	color: #000; 
 	margin-left: 5.5em;
+	margin-top: 1em;
 }
-.project .row{
+
+.project .row, .project .description{
 	display: block;
-	width: 80%;
+	width: 50%;
 	margin-left: 5em;
 	color: #fff;
+	margin-bottom: 1em;
 }
 .projects .content div.project{
 	width: 80%;
@@ -109,7 +121,7 @@ nav{
 .projects .content div.project:hover{
 	border-top: 50px solid #ed3e67;
 }
-.project-button{
+.row a{
 	border: 1px solid #fff;
 	background: transparent;
 	transition: background-color 0.5s ease;
@@ -118,13 +130,36 @@ nav{
 	color: #fff;
 	font-size: 0.8em;
 	margin-right: 3em;
+	text-decoration: none;
 }
-.project-button:hover{
+.row a:hover{
 	background-color: #ededed;
 	color: #000;
 }
+.about-section{
+	width: 80%;
+	margin-left: 8.5em;
+	text-align: justify;
+}
 .karma{
 	background: url('../images/karma-bg.jpg');
+}
+.hot-cold{
+	background: url('../images/hot-cold-bg.jpg');
+}
+.streetfighter{
+	background: url('../images/streetfighter.gif');
+}
+.shopping-list{
+	background: url('../images/shopping-list-bg.jpg');
+}
+.movie-quiz{
+	background: url('../images/movie-quiz-bg.jpg');
+}
+.job-finder{
+	background: #e06665;
+}
+.karma, .hot-cold, .streetfighter{	
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-size: cover;
@@ -144,10 +179,10 @@ footer{
 	margin-top: 1em;
 	background: #fff;
 	/* border: 3px solid #fff; */
-	border-radius: 30%;
-	width: 2em;
-	height: 2em;
-	padding:18px 14px;
+	border-radius: 50%;
+	width: 1.6em;
+	height: 1.6em;
+	padding:14px 14px;
 	font-size: 3rem;
 	transition: background-color 0.5s ease;
 }
