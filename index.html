@@ -10,41 +10,56 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Roboto:400,500,300|Lato:400,700|Oswald:400,300,700' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
 </head>
-<body>
+<body id="home">
 	<nav class="top-navigation">
 			<div class="content">
 				<ul class="social-top">
 					<li class="facebook"><a href="https://www.facebook.com/stella.chatzianagnostou" target="_blank"><i class="fa fa-facebook"></i></a></li>
 					<li class="linkedin"><a href="https://gr.linkedin.com/in/schatzia" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-					<li class="github"><a href="https://github.com/schatzia/" target="_blank"><i class="fa fa-github"></i></a></li>
+					<li class="github"><a href="https://github.com/schatzia?tab=repositories" target="_blank"><i class="fa fa-github"></i></a></li>
 				</ul>
 				<ul class="top-menu">
-					<li>About me</li>
-					<li>Projects</li>
-					<li>Resume</li>
-					<li>Contact</li>					
+					<li><a href="#home">Home</a></li>
+					<li><a href="#aboutMe">About me</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="docs/STELLA_CHATZIANAGNOSTOU_CV.pdf" target="_blank">Resume</a></li>
+					<li><a href="#contact">Contact</a></li>					
 				</ul>
 			</div>
 	</nav>
 	<section class="introduction">
 		<div class="content">
 			<img src="images/myphoto.jpg" alt="My photo" class="myPhoto">
-			<p>Hello everyone and welcome to my portfolio! <br />All of the projects presented here were created while I was a student of the "Frontend Web Development" course at Thinkful. <br/>I have a genuine interest in frontend web development and so far I have developed several websites. <br />Thinkful has helped me update my knowledge and become competitive again. <br />I like being at the edge of technology and I am a fan of lifelong learning.</p>
-			<button class="more-button">More about me</button>
+			<p>Hello everyone and welcome to my portfolio! <br />All of the projects presented here were created while I was a student at the "Frontend Web Development" course provided by Thinkful. <br/>I have a genuine interest in frontend web development and so far I have developed several websites. <br />Thinkful has helped me update my knowledge and make a switch to my career.</p>
+			<button class="more-button"><a href="#aboutMe">More about me</a></button>
 		</div>
 	</section>
-	<section class="projects">
+	<section class="about-section" id="aboutMe">
+  <h1>More About Me</h1>
+  <p>I am an <b>IT Manager</b> within a public organisation. I have a genuine interest in <b>web development</b> and so far i have developed several websites. I like being at the edge of technology and i am a fan of lifelong learning.</p>
+  <p>I seek to make a switch to my career and get dedicated employment in the field of Front End Web Development at a great, promising and aspiring company!</p>
+  <p>Being a <b>mother of two</b> doesn't leave me with a lot of free time, but when i find it, i update my personal fashion blog while drinking a hot cup of coffee and i enjoy some online shopping therapy. </p>
+  <p>I love listening to music, watching movies and walking by the beach with my family!</p>
+  <h1>Where I'm from</h1>
+  <p>I come from <b>Greece, Europe</b>. I live in a city called <b>Kavala</b>, in Northern Greece . It's a beautiful coastal city with a picturesque port, built in an amphitheatrical way. </p>
+  <h1>My background</h1>
+  <p>I have studied Electrical & Computer Engineering. I have built as a freelancer several websites using html, css, php and MySQL. Lately I have also built some websites using joomla and wordpress.</p>
+</section>
+	<section class="projects" id="projects">
 		<div class="content">
 			<h1>Projects</h1>
-			<div class="project karma">
-				<div class="row"><h2>Karma Landing Page Clone</h2></div>
-				<div class="row"><button class="project-button">Visit Page</button>
-				<button class="project-button">Get Github Code</button></div>
+		</div>
+		<div class="templates hidden">
+			<div class="project">
+				<div class="row"><h2></h2></div>
+				<div class="description"></div>
+				<div class="row"><a href="" class="visit" target="_blank">Visit Page</a>
+				<a href="" class="getCode" target="_blank">Get Github Code</a></div>
 			</div>
 		</div>
 	</section>
 	<footer>
-		<div class="content">
+		<div class="content" id="contact">
 		<ul class="social-bottom">
 			<li class="facebook"><a href="https://www.facebook.com/stella.chatzianagnostou" target="_blank"><i class="fa fa-facebook-square"></a></i></li>
 			<li class="linkedin"><a href="https://gr.linkedin.com/in/schatzia" target="_blank"><i class="fa fa-linkedin-square"></a></i></li>
@@ -53,5 +68,7 @@
 		</div>
 		<div class="copyright"><p>&copy; Stella Chatzianagnostou | 2016</p></div>
 	</footer>	
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>
