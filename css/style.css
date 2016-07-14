@@ -141,6 +141,15 @@ nav{
 	margin-left: 8.5em;
 	text-align: justify;
 }
+.dimospag{
+	background: url('../images/dimospaggaiou.jpg');
+}
+.teithe{
+	background: url('../images/teithe.jpg');
+}
+.styleguide{
+	background: url('../images/styleguide.jpg');
+}
 .karma{
 	background: url('../images/karma-bg.jpg');
 }

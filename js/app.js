@@ -2,7 +2,7 @@ var projects = [
 {
 	title: "www.dimospaggaiou.gr",
 	description: "The Official Website of Paggaio - Municipality, Greece",
-	project_class: "karma",
+	project_class: "dimospag",
 	bgImg: "dimospaggaiou.jpg",
 	url: "http://www.dimospaggaiou.gr",
 	getCodeUrl: "http://www.dimospaggaiou.gr"
@@ -10,7 +10,7 @@ var projects = [
 {
 	title: "www.ee.teithe.gr",
 	description: "The Official Website of Research Committee - Alexander Technological Educational Institute of Thessaloniki, Greece",
-	project_class: "karma",
+	project_class: "teithe",
 	bgImg: "teithe.jpg",
 	url: "http://www.ee.teithe.gr",
 	getCodeUrl: "http://www.ee.teithe.gr"
@@ -18,7 +18,7 @@ var projects = [
 {
 	title: "www.styleguide.gr",
 	description: "Styleguide - An online fashion guide with fashion & beauty tips and tricks, product reviews and smart purchases proposals",
-	project_class: "karma",
+	project_class: "styleguide",
 	bgImg: "styleguide.jpg",
 	url: "http://www.styleguide.gr",
 	getCodeUrl: "http://www.styleguide.gr"
